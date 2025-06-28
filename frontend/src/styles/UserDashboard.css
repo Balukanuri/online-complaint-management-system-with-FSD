@@ -1,0 +1,139 @@
+/* Full-page background with gradient */
+body {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Enlarged centered dashboard container */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 90vh;
+  background-color: #ffffff;
+  padding: 3rem 3.5rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+/* Headings */
+h3, h4, h5 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Search and Sort container */
+.card,
+.search-sort-section,
+.progress-section,
+.submit-section,
+.complaints-section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form input and select */
+input.form-control,
+textarea.form-control,
+select.form-select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.2);
+  outline: none;
+}
+
+/* Primary button styling */
+.btn-primary {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(106, 17, 203, 0.25);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #5b0eb4, #1f5ae0);
+}
+
+/* Logout / danger button */
+.btn-danger {
+  background-color: #ff4d4f;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #d9363e;
+}
+
+/* Alert box */
+.alert {
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+/* Progress bar */
+.progress {
+  height: 22px;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.progress-bar {
+  background-color: #28a745;
+  font-weight: 500;
+}
+
+/* Complaint cards */
+.card-body {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* No complaints text */
+.text-muted {
+  font-style: italic;
+  color: #6c757d !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .row .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
